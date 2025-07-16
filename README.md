@@ -29,11 +29,8 @@ If no directory is provided, the script operates in the current directory.
 ./file-janitor.sh report /path/to/target-directory
 ```
 
-## Why I Built This
-As part of my learning in Bash scripting, I wanted to build a practical, real-world tool that handles common file operations. This project helped me:
-- Work with file system utilities like find, tar, rm, mv.
-- Practice parsing command-line arguments and applying conditionals.
-- Learn text output formatting for better user experience.
+### 🔗 Project Source
+[View the Hyperskill project description here](https://hyperskill.org/projects/330)
 
 ## Next Steps / Improvements
 In the future, I plan to:
