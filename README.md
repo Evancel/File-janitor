@@ -1,25 +1,45 @@
 # File Janitor
 
-**File Janitor** is a simple Bash utility that helps you manage files in your directories by listing, 
-reporting, and cleaning up temporary, log, and Python files. It automates common file management tasks 
-and organizes your workspace.
-This is my first bach project.
-Here I worked with the basics of Bash scripting language, including functions and arguments, reading files, 
-conditional statements and text processing. Also, I practice writing helpful scripts, take advantage of 
-frequently used utilities, and discover how to automate work with shell scripts.
+**File Janitor** is a Bash utility designed to help manage and clean directories by listing files, generating reports, and performing cleanup operations on temporary (`.tmp`), log (`.log`), and Python (`.py`) files. It automates repetitive file management tasks and helps organize your workspace efficiently.
+
+> ✅ **This is my first Bash scripting project**, where I practiced core concepts like command-line arguments, conditionals, text processing, file operations, and script automation. It demonstrates my ability to write practical tools to streamline developer workflows.
 
 ## Features
 
-- **Greeting**: Greet the user.
-- **Help**: Offer a help message.
-- **List files**: Display files in a directory.
-- **Report**: Generate a report showing the number of `.tmp`, `.log`, and `.py` files and their total size.
-- **Clean**: Archive and delete old `.log` files, remove `.tmp` files, and move `.py` files into a dedicated directory.
-  
+- ✅ **Welcome Message**: Friendly greeting when the script starts.
+- ✅ **Help**: Display available commands and usage instructions.
+- ✅ **List Files**: Show files in the specified directory (or current directory by default).
+- ✅ **Report**: Count `.tmp`, `.log`, and `.py` files and calculate their total sizes.
+- ✅ **Clean**:
+  - Archive and delete old `.log` files (older than 3 days).
+  - Remove all `.tmp` files.
+  - Move `.py` files into a `python_scripts` subdirectory.
+
 ## Usage
 
-You can run the `file-janitor.sh` script with the following options:
+Run the script with:
 
 ```bash
 ./file-janitor.sh [option] [directory]
-Options: help, list, report, clean.
+If no directory is provided, the script operates in the current directory.
+```
+
+## Example
+```bash
+./file-janitor.sh report /path/to/target-directory
+```
+
+## Why I Built This
+As part of my learning in Bash scripting, I wanted to build a practical, real-world tool that handles common file operations. This project helped me:
+- Work with file system utilities like find, tar, rm, mv.
+- Practice parsing command-line arguments and applying conditionals.
+- Learn text output formatting for better user experience.
+
+## Next Steps / Improvements
+In the future, I plan to:
+- Add more flexible date-based cleanup options.
+- Improve error handling and input validation.
+- Add colorized output for better readability.
+- Refactor into smaller functions for better maintainability.
+
+Feel free to try it out or contribute!
