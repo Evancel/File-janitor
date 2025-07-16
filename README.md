@@ -42,4 +42,5 @@ In the future, I plan to:
 - Add colorized output for better readability.
 - Refactor into smaller functions for better maintainability.
 
+
 Feel free to try it out or contribute!
